@@ -203,7 +203,7 @@ animatorClass.prototype.resize = function(object,locationVector,time=1000,fcn="l
     //dmesg("New Animation");
     var unit = "px";
     var validUnits = ["px", "%", "mm", "in", "vh", "vw", "vmin", "vmax", "em", "ex"];
-    var nLocVector = {"height":null,"width":null,"bottom":null,"right":null};
+    var nLocVector = {"height":null,"width":null};
     for (i=0; i<validUnits.length; i++) {
         if (locationVector[0] != null) {
             if (locationVector[0].endsWith(validUnits[i])) {
